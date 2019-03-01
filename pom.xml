@@ -4,7 +4,7 @@
 	<groupId>org.asteriskjava</groupId>
 	<artifactId>asterisk-java</artifactId>
 	<name>Asterisk-Java</name>
-	<version>2.0.4-SNAP-SHOT</version>
+	<version>2.0.4.53a66e8</version>
 	<description>The free Java library for Asterisk PBX integration.</description>
 	<inceptionYear>2004</inceptionYear>
 
@@ -71,9 +71,16 @@
 	</scm>
 	<distributionManagement>
 		<repository>
-			<id>internal</id>
-			<url>file://${project.build.directory}/mvn-repo</url>
+			<id>voxbone-releases-repository</id>
+			<name>Voxbone Releases Repository</name>
+			<url>https://repositories.voxbone.com/nexus/content/repositories/releases/</url>
 		</repository>
+
+		<snapshotRepository>
+			<id>voxbone-releases-repository</id>
+			<name>Voxbone Snapshots Repository</name>
+			<url>https://repositories.voxbone.com/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
 	</distributionManagement>
 	<issueManagement>
 		<system>GitHub</system>
